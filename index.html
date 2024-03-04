@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"/>
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    
+    <nav class="navbar">
+       <div class="logo">
+        <img src="./assets/logo.jpg" alt="logo"/>
+        <h3>Lorem Epsum</h3>
+       </div>
+       <div class="menu">
+        <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#hero">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#footer">Contact</a></li>  
+        </ul>
+       </div>
+    </nav>
+
+    <!-- Hero-section -->
+
+       <section class="hero" id="hero">
+          
+       </section>
+        
+    <!-- ACCOUNT-HANDLING -->
+
+<section class="services" id="services">
+    <form class="form">
+        <div class="data">
+            Burger : <input type="number" id="burger">
+        </div>
+        <div class="data">
+            Pizza  : <input type="number"id="pizza">
+        </div>
+        <div class="data">
+            Sandwich : <input type="number" id="sandwich">
+        </div>
+        <div class="data">
+            Pasta : <input type="number"id="pasta">
+        </div>
+        <div class="data">
+           Chicken 65 : <input type="number"id="chicken65">
+        </div>
+        <div class="data">
+            Chicken kebab : <input type="number"id="chickenkebab">
+        </div>
+
+        <button type="button" onclick="fun1()">Submit</button>
+       
+        TOTAL : <h2 id="amount"></h2>
+
+        <p><u>Adding GST of 18%</u></p>
+       
+         GST : <h2 id="totalgst"></h2>
+      
+        <p>price is greater than 4000 then 500 will be added</p>
+
+        <div class="data">
+            Total amount : <h1 id="totalcost"></h1>
+        </div>
+    </form>
+
+</section>
+<!-- Footer -->
+
+    <section class="footer" id="footer">
+        <div class="top-footer">
+            <div class="content">
+                <h2>LOREM IPSUM,DOLLAR <span></span> SITE</h2>
+                <h3>LOREM IPSUM:</h3>
+
+                <div class="contact">
+                    <div class="phone">
+                        <img src="./assets/phone.jpg" style="width:40px;height:25px;" alt="">
+                        <p>+987654321</p>
+                    </div>
+                    <div class="email">
+                        <img src="./assets/mail.jpg" style="width:40px;height:25px;" alt="">
+                        <p>www.youremail.com</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/BG.webp" alt="" class="contact-img">
+        </div>
+
+        <div class="bottom-footer">
+            <p>Terms & Conditions</p>
+            <p>Copyright 2021 xyz interiors</p>
+        </div>
+    </section>
+<script src="app.js"></script>
+</body>
+</html>
